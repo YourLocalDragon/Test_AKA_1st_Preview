@@ -89,9 +89,33 @@ class StoryTeller():
       print("you see nothing but darkness to the north, some metal plate to the east, a wall to the south and a doorway to the west\n")
       print("Where do you wish to go?\n")
       pc_input = input("Input, north,east,south,west\n->")
-    
+
       if pc_input == ("north"):
-        print("You Fell Down A pit")
+        print("You Fell Down A pit.....")
+        quit()
+      elif pc_input == ("east"):
+        print("Your soul got crushed to by the wall closeing in")
+        quit()
+      elif pc_input == ("south"):
+        print("You banged your head against a wall and somehow died.... Well Done ")
+        quit()
+      elif pc_input == ("west"):
+        print("\nYou went though the door and came across a monster\n")
+        print("You have no other escape, but you see a glimps of something")
+        pass 
+      
+      pc_input = input("theres a sword on the ground to your right, Do you grab it or fight the monster?\n->")
+      print("input grab, fight")
+
+      if pc_input == ("grab"):
+        print("The monster tears you apart\n")
+        quit()
+      elif pc_input == ("fight"):
+        print("You face off against a little slime, the slime wins....\n")
+        quit()
+      
+      
+      
       
 
 
